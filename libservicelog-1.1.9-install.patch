@@ -1,0 +1,10 @@
+diff -up libservicelog-1.1/Makefile.am.install libservicelog-1.1/Makefile.am
+--- libservicelog-1.1/Makefile.am.install	2009-10-30 04:32:27.000000000 +0100
++++ libservicelog-1.1/Makefile.am	2010-05-11 14:39:54.000000000 +0200
+@@ -19,5 +19,5 @@ library_includedir = ${includedir}/servi
+ library_include_HEADERS = servicelog-1/servicelog.h servicelog-1/libservicelog.h
+ 
+ install-exec-hook:
+-	install -D --mode=754 --group=service servicelog.db \
++	install -D --mode=754 servicelog.db \
+ 		${DESTDIR}/var/lib/servicelog/servicelog.db

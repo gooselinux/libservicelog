@@ -1,0 +1,11 @@
+diff -up libservicelog-1.1/src/v29_notify_gram.y.include libservicelog-1.1/src/v29_notify_gram.y
+--- libservicelog-1.1/src/v29_notify_gram.y.include	2010-05-13 17:19:41.000000000 +0200
++++ libservicelog-1.1/src/v29_notify_gram.y	2010-05-13 17:19:55.000000000 +0200
+@@ -26,6 +26,7 @@
+ #include "../servicelog-1/libservicelog.h"
+ #include <malloc.h>
+ #include <assert.h>
++#include "v29_notify_gram.h"
+ 
+ static struct v29_sl_notify *notify;
+ static int *semantic_errors;

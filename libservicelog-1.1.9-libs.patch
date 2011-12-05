@@ -1,0 +1,12 @@
+diff -up libservicelog-1.1/src/Makefile.am.libs libservicelog-1.1/src/Makefile.am
+--- libservicelog-1.1/src/Makefile.am.libs	2010-05-17 13:24:46.297064301 -0400
++++ libservicelog-1.1/src/Makefile.am	2010-05-17 13:26:07.737064638 -0400
+@@ -34,7 +34,7 @@ pkgconfigdir = $(libdir)/pkgconfig
+ pkgconfig_DATA = servicelog-1.pc
+ 
+ libservicelog_la_LDFLAGS = -module -version-info \
+-	@GENERIC_API_VERSION@ -release @GENERIC_RELEASE@
++	@GENERIC_API_VERSION@ -release @GENERIC_RELEASE@ $(AM_LDFLAGS)
+ 
+ AM_CFLAGS	= -Wall -g -DDEST_DIR='"${exec_prefix}"'
+ AM_LDFLAGS	= -lsqlite3 -lrtas -lrtasevent
